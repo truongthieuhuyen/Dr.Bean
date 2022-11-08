@@ -1,0 +1,106 @@
+.home-main{
+    width: 1440px;
+    margin: auto;
+}
+.donate-packages{
+    width: 548px;
+    height: 84px;
+    border-radius: 50px;
+    margin: 70px auto;
+    background-color: #70AE23;
+    
+}
+.donate-packages-text{
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    color: white;
+}
+.col-sm{
+    width: 299px;
+    height: 315px;
+    border-radius: 15px; 
+    
+    margin-top: 50px !important;
+    margin: 25px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+
+}
+.justify-menu-home{
+    margin: auto;
+}
+.row1 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.col-sm .content-menu{
+    text-align: center;
+    
+    line-height: 20px;
+}
+.donate-form{
+    margin-top: 70px ;
+}
+.btn-donate{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(112, 174, 35, 100);
+    color: rgba(16, 16, 16, 100);
+    background-color: white;
+}
+.donate-form p{
+    font-size: 14px;
+    font-family: Arial;
+    margin-top: 11px;
+}
+.donate-form h4{
+    line-height: 29px !important;
+    color: rgba(112, 174, 35, 100);
+    font-size: 20px;
+    font-family: Roboto;
+    
+}
+.title{
+    height: 39px;
+    line-height: 20px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgba(255, 212, 0, 100);
+    color: rgba(16, 16, 16, 100);
+}
+.title p{
+    padding-top:10px;
+}
+.donate-content{
+    padding-top: 14px;
+}
+.donate-form-basic{
+    padding-top: 53px;
+}
+.content-heart-beat{
+    animation: beat .6s infinite alternate;
+	transform-origin: center
+}
+.bounce{
+    animation: bounce;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes beat{
+	to { transform: scale(1.05); }
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(600px);
+    }
+	25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px);}
+    75%{transform: translateY(-2px);}
+    100%{transform: translateY(0);}
+}
