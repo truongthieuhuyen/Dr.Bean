@@ -133,11 +133,14 @@
             right: calc((100% - 200px) / 2);
             top: calc((100% - 60px));
         }
-        #fs-form-2 {
-            display: none;
-            transition: all ease-in-out 5s;
-            .row {
-                row-gap: 20px;
+        .col-md-3 {
+            position: relative;
+            #fs-form-2 {
+                display: none;
+                transition: all ease-in-out 5s;
+                .row {
+                    row-gap: 20px;
+                }
             }
         }
         .contract-reference {

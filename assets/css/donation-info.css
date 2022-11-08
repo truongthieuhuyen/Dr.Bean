@@ -257,11 +257,14 @@ footer .container-fluid .row .col:last-of-type ul li:last-of-type a i {
   right: calc((100% - 200px) / 2);
   top: calc(100% - 60px);
 }
-#msform fieldset #fs-form-2 {
+#msform fieldset .col-md-3 {
+  position: relative;
+}
+#msform fieldset .col-md-3 #fs-form-2 {
   display: none;
   transition: all ease-in-out 5s;
 }
-#msform fieldset #fs-form-2 .row {
+#msform fieldset .col-md-3 #fs-form-2 .row {
   row-gap: 20px;
 }
 #msform fieldset .contract-reference .checkboxes {
