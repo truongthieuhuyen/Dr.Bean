@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "scripts": {
+    "donation-info": "node-sass --output-style compressed -o assets/css assets/scss",
+    "register": "node-sass --output-style compressed -o assets/css assets/scss"
+  }
+}
