@@ -4,6 +4,6 @@
   },
   "scripts": {
     "donation-info": "node-sass --output-style compressed -o assets/css assets/scss",
-    "login": "node-sass --output-style compressed -o assets/css assets/scss"
+    "team": "node-sass --output-style compressed -o assets/css assets/scss"
   }
 }
