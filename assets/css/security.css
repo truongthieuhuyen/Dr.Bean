@@ -118,6 +118,43 @@ footer .container-fluid .row .col:last-of-type ul li:last-of-type a i {
 }
 
 /* end FOOTER */
-/* team css */
-
-/*# sourceMappingURL=team.css.map */
+main .container-fluid .container .row .box {
+  margin: 191px 0px 161px 53px;
+  width: 400px;
+  height: 260px;
+  line-height: 20px;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgb(187, 187, 187);
+}
+main .container-fluid .container .row .box div.title {
+  margin: 27px 0px 0px 121px;
+  width: 151px;
+  height: 44px;
+  color: rgb(143, 198, 75);
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 600;
+}
+main .container-fluid .container .row .box .icon {
+  height: 74px;
+  width: 74px;
+  margin: 48px 0px 0px 37px;
+  float: left;
+}
+main .container-fluid .container .row .box .scription {
+  width: max-content;
+  margin: 67px 139px 104px 123px;
+  line-height: 5px;
+  text-align: left;
+  font-family: Roboto;
+}
+main .container-fluid .container .row .box .scription .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+main .container-fluid .container .row .box .scription .content {
+  font-size: 12px;
+}/*# sourceMappingURL=security.css.map */

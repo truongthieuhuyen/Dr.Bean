@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>Đăng ký</title>
 
-    <link rel="stylesheet" href="assets/css/security.css">
+    <link rel="stylesheet" href="assets/css/register.css">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 
 <body>
@@ -73,28 +74,34 @@
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row justify-content-around">
-                    <div class="box col-4">
-                        <div class="title">KYC</div>
-                        <img class="icon" src="assets/images/kyc.svg" alt="KYC">
-                        <div class="scription">
-                            <p class="title">Xác minh tài khoản</p>
-                            <p class="content">Xác minh tài khoản của bạn sau vài phút</p>
-                        </div>
-                    </div>
-                    <div class="box col-4">
-                        <div class="title">2FA</div>
-                        <img class="icon" src="assets/images/kyc.svg" alt="2FA">
-                        <div class="scription">
-                            <p class="title">Khóa bảo mật Google Authenticator</p>
-                            <p class="content">Bảo vệ tài khoản của bạn ngay bây giờ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="form-logo">
+            <img src="assets/images/Logo.png" alt="Logo">
+            <h2>Đăng ký</h2>
         </div>
+        <form method="post">
+            <div class="container">
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="&#xf406;    Nhập email của bạn" style="font-family:Arial, FontAwesome"
+                    name="email" size="25px" id="email" required>
+                <br><br>
+                <label for="psw"><b>Mật khẩu</b></label>
+                <br>
+                <input type="password" placeholder="&#xf023;    Nhập mật khẩu" style="font-family:Arial, FontAwesome"
+                    name="password" size="25px" id="password" required>       
+                <span class="fas fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></span>
+                <br><br>
+                <label for="number"><b>Mã giới thiệu</b></label>
+                <br>
+                <input type="text" placeholder="&#xf406;    Nhập mã giới thiệu của bạn"
+                    style="font-family:Arial, FontAwesome" name="number" size="25px" id="number" >
+                <br><br>
+                <input type="checkbox" class="checkbox">
+                <label>Đồng ý với điều khoản dịch vụ của chúng tôi</label><br><br>
+                <button type="submit" style="height: 40px; width:330px ;" class="registerbtn">Đăng ký</button>
+
+            </div>
+        </form>
     </main>
 
     <footer>
@@ -181,6 +188,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+        <script src="assets/js/register.js"></script>
 </body>
 
 </html>

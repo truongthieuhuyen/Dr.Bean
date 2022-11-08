@@ -1,0 +1,83 @@
+@import 'style';
+
+main {
+    .container-fluid {
+        .container {
+            .form {
+                width: 476px;
+                height: 576px;
+                margin: auto;
+                margin-top: 145px;
+
+                .icon {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    .iconBack {
+                        margin-left: -40px;
+                        &:hover{
+                            box-shadow: 0px 0px 15px 0px #8FC64B;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .iconClose {
+                        margin-right: -40px;
+                        &:hover{
+                            box-shadow: 0px 0px 15px 0px #8FC64B;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+
+
+                .title {
+                    font-style: normal;
+                    font-size: 24px;
+                    font-family: Arial;
+                    font-weight: 600;
+                }
+
+                .content {
+                    margin-top: 20px;
+                    font-style: normal;
+                    font-size: 18px;
+                    font-family: Arial;
+                }
+
+                .formInput {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .form-group {
+                        line-height: 20px;
+                        margin-top: 20px;
+                        font-size: 14px;
+                        font-weight: 300;
+                        padding: 0px 5px 0px 5px;
+
+                        .form-control {
+                            border-radius: 3px;
+                        }
+                    }
+                }
+
+                .btn {
+                    width: 215px;
+                    height: 51px;
+                    margin: 170px 0px 0px 228px;
+                    border-radius: 10px;
+                    background-color: rgba(143, 198, 75, 100);
+                    color: rgba(255, 255, 255, 100);
+                    font-size: 18px;
+                    text-align: center;
+                    font-family: Roboto;
+                }
+
+            }
+        }
+    }
+}
