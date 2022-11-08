@@ -1,0 +1,52 @@
+@import "style";
+
+/* MAIN */
+main {
+    .form-logo {
+        text-align: center;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    form {
+        margin-top: 18px;
+        font-size: 11px;
+
+        #email {
+            margin-top: 18px;
+            border: 2px solid #FCFDF2;
+            border-radius: 12px;
+            padding: 5px;
+        }
+
+        #password {
+            margin-top: 18px;
+            border: 2px solid #FCFDF2;
+            border-radius: 12px;
+            padding: 5px;
+        }
+
+        #number {
+            margin-top: 18px;
+            border: 2px solid #FCFDF2;
+            border-radius: 12px;
+            padding: 5px;
+        }
+
+        .registerbtn {
+            border: 1px solid lightgreen;
+            border-radius: 12px;
+            padding: 10px;
+            background: $light-green;
+            color: white;
+
+
+
+        }
+
+    }
+}
+
+/* end MAIN */

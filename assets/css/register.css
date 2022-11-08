@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Roboto";
+}
+
+.container-fluid {
+  max-width: calc(100% - 230px);
+}
+
+/* HEADER */
+.navbar .container-fluid .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav {
+  align-items: center;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) .nav-link {
+  height: 47px;
+  width: 110px;
+  background: #8fc64b 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) .nav-link.active {
+  background: #70ae23 100%;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(16, 16, 16);
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  border: none;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle > i {
+  background-color: rgb(170, 166, 166);
+  height: 51px;
+  width: 51px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: rgb(16, 16, 16);
+}
+
+/* end HEADER */
+/* FOOTER */
+footer .container-fluid .row .navbar-brand {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .container-fluid .row .logo-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container-fluid .row .logo-title p {
+  margin-bottom: 3px;
+  line-height: 20px;
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  letter-spacing: 0.03rem;
+}
+footer .container-fluid .row .col .footer-thread {
+  line-height: 20px;
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  margin-bottom: 16px;
+}
+footer .container-fluid .row .col > ul {
+  list-style: none;
+  padding-left: 0%;
+}
+footer .container-fluid .row .col > ul li {
+  margin-bottom: 5px;
+  line-height: 19px;
+  color: rgb(16, 16, 16);
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+}
+footer .container-fluid .row .col > ul li a {
+  text-decoration: none;
+  margin-bottom: 5px;
+  line-height: 19px;
+  color: rgb(16, 16, 16);
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+footer .container-fluid .row .col > ul li a:hover {
+  text-decoration: underline;
+}
+footer .container-fluid .row .col:last-of-type ul li {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+  margin-top: 23px;
+}
+footer .container-fluid .row .col:last-of-type ul li:last-of-type a {
+  margin: 0;
+}
+footer .container-fluid .row .col:last-of-type ul li:last-of-type a i {
+  font-size: 24px;
+}
+
+/* end FOOTER */
+/* MAIN */
+main .form-logo {
+  text-align: center;
+}
+main .form-logo h2 {
+  font-size: 20px;
+}
+main form {
+  margin-top: 18px;
+  font-size: 11px;
+}
+main form #email {
+  margin-top: 18px;
+  border: 2px solid #FCFDF2;
+  border-radius: 12px;
+  padding: 5px;
+}
+main form #password {
+  margin-top: 18px;
+  border: 2px solid #FCFDF2;
+  border-radius: 12px;
+  padding: 5px;
+}
+main form #number {
+  margin-top: 18px;
+  border: 2px solid #FCFDF2;
+  border-radius: 12px;
+  padding: 5px;
+}
+main form .registerbtn {
+  border: 1px solid lightgreen;
+  border-radius: 12px;
+  padding: 10px;
+  background: #8fc64b 100%;
+  color: white;
+}
+
+/* end MAIN *//*# sourceMappingURL=register.css.map */
