@@ -7,8 +7,8 @@ $(".next").click(function () {
     if (animating) return false;
     animating = true;
 
-    current_fs = $(this).parent();
-    next_fs = $(this).parent().next();
+    current_fs = $(this).parent().parent().parent();
+    next_fs = $(this).parent().parent().parent().next();
 
     //activate next step on progressbar using the index of next_fs
     $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
@@ -45,8 +45,8 @@ $(".previous").click(function () {
     if (animating) return false;
     animating = true;
 
-    current_fs = $(this).parent();
-    previous_fs = $(this).parent().prev();
+    current_fs = $(this).parent().parent().parent();
+    previous_fs = $(this).parent().parent().parent().prev();
 
     //de-activate current step on progressbar
     $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
@@ -80,3 +80,15 @@ $(".previous").click(function () {
 $(".submit").click(function () {
     return false;
 })
+
+/*
+? show section nếu checkbox được tích 
+*/
+function checkBox() {
+    var check = $("#flexCheckAllocation").is(":checked");
+
+    if (check) {
+        $("#fs-form-2").show();
+    }
+    else $("#fs-form-2").hide();
+}

@@ -124,4 +124,68 @@ footer .container-fluid .row .col:last-of-type ul li:last-of-type a i {
   font-size: 24px;
 }
 
-/* end FOOTER *//*# sourceMappingURL=style.css.map */
+/* end FOOTER */
+.login {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  padding: 0 35px 0 50px;
+  box-shadow: -7px 9px 40px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 380px;
+  height: 450px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.login-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.login-heading {
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.login-label {
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+.login-gruop {
+  padding-bottom: 10px;
+}
+.login-content {
+  padding: 10px;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.login-content > i {
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 5px;
+}
+.login-input {
+  color: #aaa6a6;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.login-submit {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+.login-submit button {
+  color: white;
+  background-color: #8FC64B;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 100px;
+}/*# sourceMappingURL=login.css.map */

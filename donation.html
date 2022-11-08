@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
 </head>
 
 <body>
@@ -82,43 +86,266 @@
                 <li>Thanh toán</li>
                 <li>Hoàn thành</li>
             </ul>
-            <!-- fieldsets -->
+            <!-- Fieldset 1-->
             <fieldset>
-                <h2 class="fs-title">Create your account</h2>
-                <h3 class="fs-subtitle">This is step 1</h3>
-                <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="pass" placeholder="Password" />
-                <input type="password" name="cpass" placeholder="Confirm Password" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                <div class="row">
+                    <h2 class="fs-title">Thông tin ủng hộ</h2>
+                    <h3 class="fs-subtitle">This is step 1</h3>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="validationName" class="form-label">Họ và tên</label>
+                                <input type="text" class="form-control" id="validationName" value="Mio" readonly
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationEmail" class="form-label">Email</label>
+
+                                <input type="email" class="form-control" id="validationEmail"
+                                    value="abcxyz@gmail.com&nbsp;" required readonly>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationPhone" class="form-label">Số điện thoại</label>
+                                <input type="text" class="form-control" id="validationPhone" value="0987654321" required
+                                    readonly>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCity" class="form-label">Tỉnh/ Thành phố</label>
+                                <span>*</span>
+                                <select class="form-select" id="validationCity" required>
+                                    <option selected disabled value="">Tỉnh/ Thành phố</option>
+                                    <option>Hà Nội</option>
+                                    <option>TP.HCM</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationDistrict" class="form-label">Quận/ Huyện</label>
+                                <span>*</span>
+                                <select class="form-select" id="validationDistrict" required>
+                                    <option selected disabled value="">Quận/ Huyện</option>
+                                    <option>Quận 1</option>
+                                    <option>Quận 10</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationAddress" class="form-label">Địa chỉ nhà</label>
+                                <span>*</span>
+                                <input type="text" class="form-control" id="validationAddress" placeholder="địa chỉ nhà"
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationIdentityNumber" class="form-label">CMTND/CCCD</label>
+                                <input type="text" class="form-control" id="validationIdentityNumber"
+                                    placeholder="3498 1238 9189" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class='col-md-4'>
+                                <label for="validationCreatedDate" class="form-label">Ngày cấp</label>
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" id="validationCreatedDate" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationAllocationPlace" class="form-label">Nơi cấp</label>
+                                <input type="text" class="form-control" id="validationAllocationPlace"
+                                    placeholder="3498 1238 9189" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <div class="card-header px-0">
+                                <img src="assets/images/Logo.png" alt="">
+                                <span>Thông tin gói ủng hộ</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="card-title">Gói
+                                            <span>Mở rộng</span>
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="card-price">200.000.000 VNĐ</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="card-text">Khuyến mại</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="card-promotion">10kg rau giá</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Tiến hành gói thanh toán"
+                            id="fs-next-1" />
+                    </div>
+                </div>
             </fieldset>
+            <!-- Fieldset 2 -->
             <fieldset>
-                <h2 class="fs-title">Social Profiles</h2>
-                <h3 class="fs-subtitle">Your presence on the social network</h3>
-                <input type="text" name="twitter" placeholder="Twitter" />
-                <input type="text" name="facebook" placeholder="Facebook" />
-                <input type="text" name="gplus" placeholder="Google Plus" />
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                <div class="row justify-content-center">
+                    <div class="contract-reference">
+                        <img src="assets/images/Image 2@1x.png" alt="">
+
+                        <div class="checkboxes">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Đồng ý với các điều khoản có trong hợp đồng
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckAllocation"
+                                    onclick="checkBox()">
+                                <label class="form-check-label" for="flexCheckAllocation">
+                                    Nhận hợp đồng tại nhà
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fs-form-2">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="validationName" class="form-label">Họ và tên</label>
+                                <input type="text" class="form-control" id="validationName" value="Mio" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="validationEmail"
+                                    value="abcxyz@gmail.com&nbsp;" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationPhone" class="form-label">Số điện thoại</label>
+                                <input type="text" class="form-control" id="validationPhone" value="0987654321"
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCity" class="form-label">Tỉnh/ Thành phố</label>
+                                <span>*</span>
+                                <select class="form-select" id="validationCity" required>
+                                    <option selected disabled value="">Tỉnh/ Thành phố</option>
+                                    <option>Hà Nội</option>
+                                    <option>TP.HCM</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationDistrict" class="form-label">Quận/ Huyện</label>
+                                <span>*</span>
+                                <select class="form-select" id="validationDistrict" required>
+                                    <option selected disabled value="">Quận/ Huyện</option>
+                                    <option>Quận 1</option>
+                                    <option>Quận 10</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationAddress" class="form-label">Địa chỉ nhà</label>
+                                <span>*</span>
+                                <input type="text" class="form-control" id="validationAddress" placeholder="địa chỉ nhà"
+                                    required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-5">
+                        <input type="button" name="previous" class="previous action-button" value="Quay lại" />
+                        <input type="button" name="next" class="next action-button" value="Tiếp theo" />
+                    </div>
+                </div>
             </fieldset>
+            <!-- Fieldset 3 -->
             <fieldset>
-                <h2 class="fs-title">Personal Details</h2>
-                <h3 class="fs-subtitle">We will never sell it</h3>
-                <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
-                <input type="text" name="phone" placeholder="Phone" />
-                <textarea name="address" placeholder="Address"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="button" name="next" class="next action-button" value="Next" />
+                <div class="row">
+                    <h2 class="fs-title">Phương thức thanh toán</h2>
+                    <div class="col-md-4">
+                        <div class="radio-check">
+                            <input type="radio" id="credit" name="fs_payment">
+                            <label for="credit">Cổng thanh toán ngân lượng</label><br>
+                            <input type="radio" id="point" name="fs_payment">
+                            <label for="point">Điểm thưởng</label>
+                        </div>
+
+                        <input type="button" name="previous" class="previous action-button" value="Quay lại" />
+                        <input type="button" name="next" class="next action-button" value="Thanh toán"
+                            id="pay-button" />
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-left card-info-payment">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Thông tin người sở hữu</h4>
+                                <p class="card-name">Họ và tên: <span>Mio</span></p>
+                                <p class="card-phone">Số điện thoại/ Email: <span>abcxz@gmail.com</span></p>
+                                <p class="card-identity">CMTND/CCCD: <span>032198567832</span></p>
+                                <p class="card-createdDate">Ngày cấp: <span>09/11/2022</span></p>
+                                <div class="card-value">
+                                    <span>Tổng số tiền thanh toán</span>
+                                    <p>200.000.000 VNĐ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
+            <!-- Fieldset 4 -->
             <fieldset>
-                <h2 class="fs-title">Hoàn thành</h2>
-                <h3 class="fs-subtitle">Xin cảm ơn</h3>
-                <!-- <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
-                <input type="text" name="phone" placeholder="Phone" />
-                <textarea name="address" placeholder="Address"></textarea> -->
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                <div class="row">
+                    <h2 class="fs-title text-center">Thanh toán thành công</h2>
+                    <div>
+                        <img src="assets/images/bill.png" alt="">
+                    </div>
+                </div>
             </fieldset>
         </form>
     </main>
@@ -209,6 +436,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -216,6 +448,12 @@
 
     <!-- js -->
     <script src="assets/js/donation.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
 </body>
 
 </html>
