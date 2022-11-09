@@ -13,8 +13,7 @@
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav {
   align-items: center;
-  -moz-column-gap: 42px;
-       column-gap: 42px;
+  column-gap: 42px;
 }
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) .nav-link {
   height: 47px;
@@ -34,8 +33,7 @@
 .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle {
   display: flex;
   align-items: center;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  column-gap: 8px;
   font-size: 14px;
   font-weight: 700;
   color: rgb(16, 16, 16);
@@ -61,13 +59,9 @@
 /* end HEADER */
 /* FOOTER */
 footer .container-fluid .row .navbar-brand {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 footer .container-fluid .row .logo-title {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -113,8 +107,7 @@ footer .container-fluid .row .col > ul li a:hover {
 }
 footer .container-fluid .row .col:last-of-type ul li {
   display: flex;
-  -moz-column-gap: 22px;
-       column-gap: 22px;
+  column-gap: 22px;
   margin-top: 23px;
 }
 footer .container-fluid .row .col:last-of-type ul li:last-of-type a {
@@ -162,4 +155,6 @@ main form .registerbtn {
   color: white;
 }
 
-/* end MAIN *//*# sourceMappingURL=register.css.map */
+/* end MAIN */
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Roboto";
+}
+
+.container-fluid {
+  max-width: calc(100% - 230px);
+}
+
+/* HEADER */
+.navbar .container-fluid .navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav {
+  align-items: center;
+  column-gap: 42px;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) .nav-link {
+  height: 47px;
+  width: 110px;
+  background: #8fc64b 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:not(:last-of-type) .nav-link.active {
+  background: #70ae23 100%;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(16, 16, 16);
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  border: none;
+}
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .dropdown-toggle > i {
+  background-color: rgb(170, 166, 166);
+  height: 51px;
+  width: 51px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: rgb(16, 16, 16);
+}
+
+/* end HEADER */
+/* FOOTER */
+footer .container-fluid .row .navbar-brand {
+  width: fit-content;
+}
+footer .container-fluid .row .logo-title {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .container-fluid .row .logo-title p {
+  margin-bottom: 3px;
+  line-height: 20px;
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  letter-spacing: 0.03rem;
+}
+footer .container-fluid .row .col .footer-thread {
+  line-height: 20px;
+  color: rgb(16, 16, 16);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  margin-bottom: 16px;
+}
+footer .container-fluid .row .col > ul {
+  list-style: none;
+  padding-left: 0%;
+}
+footer .container-fluid .row .col > ul li {
+  margin-bottom: 5px;
+  line-height: 19px;
+  color: rgb(16, 16, 16);
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+}
+footer .container-fluid .row .col > ul li a {
+  text-decoration: none;
+  margin-bottom: 5px;
+  line-height: 19px;
+  color: rgb(16, 16, 16);
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+footer .container-fluid .row .col > ul li a:hover {
+  text-decoration: underline;
+}
+footer .container-fluid .row .col:last-of-type ul li {
+  display: flex;
+  column-gap: 22px;
+  margin-top: 23px;
+}
+footer .container-fluid .row .col:last-of-type ul li:last-of-type a {
+  margin: 0;
+}
+footer .container-fluid .row .col:last-of-type ul li:last-of-type a i {
+  font-size: 24px;
+}
+
+/* end FOOTER */
+/* MAIN */
+main {
+  /* form */
+  /*headings*/
+  /*progressbar*/
+}
+main #form2fa {
+  width: calc(100% - 230px);
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  /*inputs*/
+  /*buttons*/
+}
+main #form2fa fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+  /*Hide all except first fieldset*/
+}
+main #form2fa fieldset:not(:first-of-type) {
+  display: none;
+}
+main #form2fa fieldset .row {
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+main #form2fa fieldset .row .col-md-4 {
+  text-align: left;
+}
+main #form2fa fieldset .row .col-md-4 > span {
+  color: red;
+}
+main #form2fa fieldset .row .col-md-4 .form-label {
+  color: rgb(203, 203, 213);
+  font-size: 14px;
+  font-weight: 500;
+}
+main #form2fa fieldset .row .col-md-4 .form-select {
+  font-size: 14px;
+  color: rgb(203, 203, 213);
+}
+main #form2fa fieldset .row .col-md-4 .form-select::selection {
+  color: #000;
+}
+main #form2fa fieldset .row .col-md-4 .input-group .form-control {
+  border-right: none;
+}
+main #form2fa fieldset .row .col-md-4 .input-group .input-group-addon {
+  border-left: none;
+  background-color: transparent;
+}
+main #form2fa fieldset .row .col-md-4 .radio-check {
+  margin-bottom: 30px;
+}
+main #form2fa fieldset .row .col-md-4 .radio-check input[type=radio] {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid rgb(143, 198, 75);
+}
+main #form2fa fieldset .row .col-md-4 .radio-check input[type=radio]::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%;
+}
+main #form2fa fieldset .row .col-md-4 .radio-check input[type=radio]:checked {
+  border-color: rgb(143, 198, 75);
+}
+main #form2fa fieldset .row .col-md-4 .radio-check input[type=radio]:checked::before {
+  background-color: rgb(143, 198, 75);
+}
+main #form2fa fieldset .row .col-md-4 #pay-button {
+  margin-left: 16px;
+}
+main #form2fa fieldset .row .w-1p3 {
+  width: 40%;
+}
+main #form2fa fieldset .row .w-1p3 h6 {
+  color: #666;
+}
+main #form2fa fieldset .row .w-1p3 * {
+  text-align: left;
+}
+main #form2fa fieldset .row .w-1p3 .qr-section {
+  text-align: center;
+}
+main #form2fa fieldset .row .w-1p3 .qr-section .qr-img {
+  width: 30%;
+}
+main #form2fa fieldset .row .w-1p3 .qr-section .qr-code {
+  text-align: center;
+}
+main #form2fa fieldset .row .w-1p3 .qr-section .qr-code #value-qrcode {
+  outline: none;
+  border: none;
+  text-align: right;
+  width: 55%;
+}
+main #form2fa fieldset .row .w-1p3 .qr-section .qr-code #copy-qrcode {
+  border: 1px solid rgb(143, 198, 75);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+main #form2fa fieldset .row .w-1p3 .qr-section .qr-code #copy-qrcode:hover {
+  background-color: rgb(143, 198, 75);
+  color: #fff;
+}
+main #form2fa fieldset .row .w-1p3 label[for=validationPassword2FA]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f06e";
+  font-weight: 900;
+  position: absolute;
+  top: 38px;
+  right: 15px;
+}
+main #form2fa fieldset .row .qr-note {
+  width: 60%;
+  background-color: rgb(255, 255, 147);
+  border-radius: 12px;
+  border: 1px solid rgb(58, 58, 58);
+  padding: 20px 5px;
+}
+main #form2fa fieldset .row .qr-note span {
+  font-size: 14px;
+}
+main #form2fa fieldset .row .qr-note i {
+  background-color: rgb(143, 198, 75);
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+main #form2fa fieldset .col-md-3 {
+  position: relative;
+}
+main #form2fa fieldset .col-md-3 #fs-form-2 {
+  display: none;
+  transition: all ease-in-out 5s;
+}
+main #form2fa fieldset .col-md-3 #fs-form-2 .row {
+  row-gap: 20px;
+}
+main #form2fa > input,
+main #form2fa > textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  margin-bottom: 10px;
+  width: 33.3333333333%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 13px;
+}
+main #form2fa .action-button {
+  width: 300px;
+  background: rgb(143, 198, 75);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  border: 0 none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+main #form2fa .action-button:hover, main #form2fa .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+}
+main #form2fa .previous {
+  border: 1px solid rgb(151, 202, 75);
+  background-color: #fff;
+  color: #000;
+}
+main .fs-title {
+  text-align: center !important;
+  margin-bottom: 40px;
+  text-align: left;
+  line-height: 20px;
+  color: rgb(16, 16, 16);
+}
+main .fs-subtitle {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: left;
+}
+main #progressbar-2fa {
+  overflow: hidden;
+  counter-reset: step;
+  padding-left: 0%;
+}
+main #progressbar-2fa li {
+  list-style-type: none;
+  color: rgb(203, 203, 213);
+  font-size: 14px;
+  width: 25%;
+  float: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*progressbar connectors*/
+}
+main #progressbar-2fa li.active {
+  color: rgb(143, 198, 75);
+  /*marking active/completed steps blue*/
+  /*The number of the step and the connector before it = blue*/
+}
+main #progressbar-2fa li.active::before, main #progressbar-2fa li.active::after {
+  background: rgb(143, 198, 75);
+  color: white;
+}
+main #progressbar-2fa li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #000;
+  background: rgb(203, 203, 213);
+  border-radius: 50%;
+  margin: 0 auto 5px auto;
+}
+main #progressbar-2fa li::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: rgb(203, 203, 213);
+  position: absolute;
+  left: -45%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+main #progressbar-2fa li:first-child::after {
+  content: none;
+}
+main #progressbar-2fa li > p {
+  width: 99px;
+  text-align: center;
+}
+
+/* end MAIN */
+
+/*# sourceMappingURL=2fa.css.map */
